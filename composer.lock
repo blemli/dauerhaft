@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1baf8d3d4f1ed48acd4382cc1f8dd556",
+    "content-hash": "89b2f25a339b1c5022045d2a06d3e3b3",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -8004,6 +8004,80 @@
                 }
             ],
             "time": "2023-11-03T12:00:00+00:00"
+        },
+        {
+            "name": "grafst/artisan-bug",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/grafst/artisan-bug.git",
+                "reference": "4dc6d1f55055edd7e755788f752c3a01895a4392"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/grafst/artisan-bug/zipball/4dc6d1f55055edd7e755788f752c3a01895a4392",
+                "reference": "4dc6d1f55055edd7e755788f752c3a01895a4392",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^10.0",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.8",
+                "orchestra/testbench": "^8.8",
+                "pestphp/pest": "^2.20",
+                "pestphp/pest-plugin-arch": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Grafst\\ArtisanBug\\ArtisanBugServiceProvider"
+                    ],
+                    "aliases": {
+                        "ArtisanBug": "Grafst\\ArtisanBug\\Facades\\ArtisanBug"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Grafst\\ArtisanBug\\": "src/",
+                    "Grafst\\ArtisanBug\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "grafst",
+                    "email": "grafst@users.noreply.github.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "make bugreporting easier",
+            "homepage": "https://github.com/grafst/artisan-bug",
+            "keywords": [
+                "artisan-bug",
+                "grafst",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/grafst/artisan-bug/issues",
+                "source": "https://github.com/grafst/artisan-bug/tree/v1.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/grafst",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-01-30T19:24:08+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
