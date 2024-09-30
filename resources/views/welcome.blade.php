@@ -36,10 +36,12 @@
             </style>
 
     </head>
-    <body class="antialiased bg-lime-300">
-    <p class="text-8xl font-alfa">dauerhaft.ch</p>
-    <div class="block">
-
+    <body class="antialiased bg-teal-900 text-white">
+    <p class="text-6xl font-alfa">dauerhaft.ch</p>
+    <div class="block py-12 min-h-[65vh] max-w-[65vh] m-auto group">
+        <img src="{{asset('img/happy.svg')}}" alt="hero" class="h-[55vh] m-auto group-hover:hidden">
+        <img src="{{asset('img/sad.svg')}}" alt="sad" class="h-[55vh] m-auto hidden group-hover:block">
     </div>
+    @include('thing-grid')
     </body>
 </html>

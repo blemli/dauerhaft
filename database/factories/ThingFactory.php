@@ -18,8 +18,9 @@ class ThingFactory extends Factory
             'name' => $this->faker->name(),
             'description' => $this->faker->text(),
             'price' => $this->faker->randomFloat(),
-            'buy_date' => Carbon::now(),
-            'death_date' => Carbon::now(),
+            'buy_date' => $this->faker->dateTimeThisDecade('yesterday'),
+            //bigger than buy_date
+            'death_date' => $this->faker->dateTimeThisDecade('now'),
             'picture' => $this->faker->word(),
         ];
     }
