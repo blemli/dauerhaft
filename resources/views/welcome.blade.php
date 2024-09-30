@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="favicon.svg">
+        @vite('resources/css/app.css')
 
         <title>Dauerhaft</title>
 
         <!-- Fonts -->
-        <script src="{{ basset('https://cdn.tailwindcss.com')}}"></script>
         <script defer data-domain="dauerhaft.ch" src="{{basset('https://plausible.problem.li/js/script.js')}}"></script>
             <style>
                 /* latin */
